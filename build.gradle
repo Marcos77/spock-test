@@ -1,0 +1,19 @@
+group 'com.spock'
+version '1.0.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+    testRuntime(
+            'com.athaydes:spock-reports:1.2.10'
+    )
+    testCompile 'org.slf4j:slf4j-api:1.7.21'
+    testCompile 'org.slf4j:slf4j-simple:1.7.21'
+}
